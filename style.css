@@ -148,7 +148,7 @@ h1{
     line-height: 0px;
     vertical-align: middle;
     padding: 0;
-    padding-bottom: 5px;
+    padding-bottom: 0px;
     border-radius: 0;
     border: 0;
     color: #fff;
@@ -419,6 +419,6 @@ h1{
         display: none;
     }
     .todolist-wrap{
-        min-height: 500px;
+        min-height: 450px;
     }
 }
