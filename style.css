@@ -1,0 +1,424 @@
+/*common*/
+body{
+    background-color: #dadada;
+}
+.loader .loading{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
+.no-ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+img{
+    max-width: 100% !important;
+}
+h1{
+    margin-bottom: 0;
+}
+.font-40{
+    font-size: 40px;
+}
+.font-16{
+    font-size: 16px;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+
+/*base*/
+.listheader{
+    min-height: 150px;
+}
+.dt-wrap {
+    padding-bottom: 30px;
+}
+.appwrap{
+    max-width:480px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+#header{
+    background-color: #F3F3F3!important;
+}
+#header .navbar{
+    padding: 25px;
+    padding-bottom: 0;
+    background-color: #F3F3F3!important;
+
+}
+
+.active{
+    color:#fff;
+}
+.underline{
+    position: absolute;
+    height: 30px;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    display: block;
+    background-color: #000;
+    transition: 0.2s ease-in-out;
+    border-radius: 30px;
+}
+
+/*icon-btn*/
+.icon-btn{
+    height:48px;
+    width:48px;
+    padding: 0;
+    border:0;
+    color: #000 !important;
+    font-size: 24px;
+    outline: none !important;
+    opacity: 0.5;
+    background: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.icon-btn:hover{
+    opacity: 1;
+   
+}
+.icon-btn .fa-search{
+    font-size: 24px;
+}
+.icon-btn .fa-bars{
+    font-size: 31px;
+}
+.icon-btn .fa-bars{
+    position: relative;
+}
+.i-inner{
+    position: absolute;
+    height: 7px;
+    background-color: #F3F3F3!important;
+    width: 11px;
+    top: 2px;
+    left: 0;
+}
+.i-inner.i-botbar{
+    top:auto;
+    left: auto;
+    right: -1px;
+    bottom: 3px;
+}
+
+/*heading*/
+.heading{
+    color:#fff;
+    padding: 30px;
+    background:url(images/sky.jpg) no-repeat center top 50%;
+    background-size: cover;
+}
+.heading h1{
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.details-wrap{
+   
+    background-color: #fff;
+}
+.input-group{
+    margin-bottom: 0;
+}
+.addtexbox{
+    height: 40px;
+    border-radius: 0;
+    margin-right: 10px;
+    box-shadow: none !important;
+}
+.addtexbox:focus{
+    border-color:#FD8300;
+}
+
+.addbtn{
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 0px;
+    vertical-align: middle;
+    padding: 0;
+    padding-bottom: 5px;
+    border-radius: 0;
+    border: 0;
+    color: #fff;
+    background-color: #FD8300;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.addbtn:hover,.addbtn:focus,.addbtn:active
+{
+    background-color:#de3000;
+}
+.add-items-wrap
+{
+    padding: 30px;
+    border-bottom: 1px solid #ddd;
+}
+.todolist-wrap{
+    min-height: 600px;
+}
+
+/*appcat*/
+.appcat{
+    overflow: hidden;
+}
+.appcat .no-ul{
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+    width: fit-content;
+    display: flex;
+}
+.appcat .no-ul li{
+    display: inline-block;
+    padding: 5px 20px;
+    line-height: 20px;
+    margin-left: 0px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 13px;
+    position: relative;
+    z-index: 100;
+    width: 100px;
+    text-align: center;
+    transition: 0.15s linear;
+  
+}
+.appcat .no-ul li:hover{
+    color:#000;
+}
+.appcat .no-ul li:first-child{
+    margin-left: 0;
+}
+.appcat .no-ul li.active:hover{
+
+    color: #fff;
+}
+
+/*car*/
+.cars{
+    padding:30px;
+    float: left;
+    width: 100%;
+    color:#fff;
+    background-color: #fff;
+}
+.cars ul li{
+    margin-bottom: 75px;
+}
+.car
+{
+    width: 100%;
+    height: 205px;
+    background-color: #999;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+}
+.car-title{
+    font-size: 34px;
+    font-weight: bold;
+}
+.car-headline{
+    position: absolute;
+    left: 0;
+    top: 80px;
+    height: 3px;
+    background-color: #fff;
+    width: 20px;
+
+}
+.car-image{
+    position: absolute;
+    bottom: -50px;
+    right: -25px;
+    max-width: 80%;
+}
+.car-btn{
+    background-color: rgba(255,255,255, 0.2);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 100%;
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    cursor: pointer;
+     transition: 0.3s all;
+}
+.car-btn:hover{
+    background-color:rgba(0,0,0, 0.2);
+}
+
+
+/*theme*/
+.theme0{
+    background-color: #F70029; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#F70029, #B80056); /* Standard syntax (must be last) */
+    transition: 0.3s all;
+}
+.theme1{
+    background-color: #12E187; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#12E187, #005B98); /* Standard syntax (must be last) */
+    transition: 0.3s all;
+}
+.theme2{
+    background-color: #000B98; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#000B98, #005B98); /* Standard syntax (must be last) */
+    transition: 0.3s all;
+}
+.theme3{
+    background: #77ed99;  /* fallback for old browsers */
+    background-image: linear-gradient( #77ed99, #15af67); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: 0.3s all;
+}
+.theme4{
+    background: #616161;  /* fallback for old browsers */
+    background-image: linear-gradient(#9bc5c3, #616161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: 0.3s all;
+}
+.theme5{
+    background-color: #fe8c00;
+    background-image: linear-gradient(#f83600,#fe8c00);
+    transition: 0.3s all;
+}
+.theme6{
+    background-color: #fe8c00;
+    background-image: linear-gradient(#f83600,#fe8c00);
+    transition: 0.3s all;
+}
+.theme7{
+    background-color: #000B98; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#000B98, #005B98); /* Standard syntax (must be last) */
+    transition: 0.3s all;
+}
+.theme8{
+    background-color: #F70029; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#F70029, #B80056); /* Standard syntax (must be last) */
+    transition: 0.3s all;
+    
+}
+
+
+.theme0:hover{
+    background-image: linear-gradient(#B80056,#F70029); /* Standard syntax (must be last) */
+}
+.theme1:hover{
+    background-image: linear-gradient(#005B98,#12E187); /* Standard syntax (must be last) */
+}
+.theme2:hover{
+    background-image: linear-gradient(#005B98,#000B98); /* Standard syntax (must be last) */
+}
+.theme3:hover{
+    background-image: linear-gradient(#15af67,#77ed99);
+}
+.theme4:hover{
+    background-image: linear-gradient( #616161 , #9bc5c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.theme5:hover{
+    background-image: linear-gradient(#fe8c00,#f83600);
+}
+.theme6:hover{
+    background-image: linear-gradient(#fe8c00,#f83600); /* Standard syntax (must be last) */
+}
+.theme7:hover{
+    background-image: linear-gradient(#005B98,#000B98); /* Standard syntax (must be last) */
+}
+.theme8:hover{
+    background-image: linear-gradient(#B80056,#F70029);
+}
+
+/*cars detail*/
+#details{
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.cars-details {
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.details-image .car-image{
+    top:0;
+    bottom: auto;
+}
+.details-img{
+    max-width: 80%;
+    margin: 10%;
+}
+.details-content{
+    padding: 30px;
+    background: #fff;
+}
+.car-text{
+    margin: 30px 0;
+}
+.car-text p{
+    margin: 0;
+}
+.car-price{
+    margin-top: 30px;
+}
+
+.car-spec-box{
+    margin-top: 20px;
+    padding: 15px;
+    color: #17212A;
+    width:140px;
+    border-radius: 15px;
+    background-color: #F0F0F0;
+    display: inline-block;
+    margin-left: 20px;
+}
+.m-l-0{
+    margin-left: 0;
+    color:#fff;
+}
+.car-spec-box.theme01{
+    color: #fff;
+}
+.car-spec-box h5{
+    text-transform: uppercase;
+}
+.car-spec-box p{
+    font-size: 12px;
+    margin: 0;
+}
+.cartopbar{
+    height: 30px;
+    background: #F3F3F3!important;
+}
+
+@media (min-width: 500px) {
+    .appwrap{
+        max-width:768px;
+    }
+    .car-image{
+        max-width: 400px;
+    }
+    
+}
+@media (max-width: 500px) {
+    .appcat .no-ul li:last-child{
+        display: none;
+    }
+    .todolist-wrap{
+        min-height: 300px;
+    }
+}
