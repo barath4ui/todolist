@@ -212,4 +212,7 @@ h1{
     .todolist-wrap{
         min-height: 500px;
     }
+    .addbtn{
+        padding-bottom: 0;
+    }
 }
