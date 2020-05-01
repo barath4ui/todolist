@@ -69,47 +69,7 @@ h1{
     border-radius: 30px;
 }
 
-/*icon-btn*/
-.icon-btn{
-    height:48px;
-    width:48px;
-    padding: 0;
-    border:0;
-    color: #000 !important;
-    font-size: 24px;
-    outline: none !important;
-    opacity: 0.5;
-    background: none !important;
-    outline: none !important;
-    box-shadow: none !important;
-}
-.icon-btn:hover{
-    opacity: 1;
-   
-}
-.icon-btn .fa-search{
-    font-size: 24px;
-}
-.icon-btn .fa-bars{
-    font-size: 31px;
-}
-.icon-btn .fa-bars{
-    position: relative;
-}
-.i-inner{
-    position: absolute;
-    height: 7px;
-    background-color: #F3F3F3!important;
-    width: 11px;
-    top: 2px;
-    left: 0;
-}
-.i-inner.i-botbar{
-    top:auto;
-    left: auto;
-    right: -1px;
-    bottom: 3px;
-}
+
 
 /*heading*/
 .heading{
@@ -148,7 +108,7 @@ h1{
     line-height: 0px;
     vertical-align: middle;
     padding: 0;
-    padding-bottom: 0px;
+    padding-bottom: 5px;
     border-radius: 0;
     border: 0;
     color: #fff;
@@ -169,241 +129,72 @@ h1{
     min-height: 600px;
 }
 
-/*appcat*/
-.appcat{
-    overflow: hidden;
-}
-.appcat .no-ul{
-    height: 30px;
-    overflow: hidden;
+
+/* task list */
+.task-container{
     position: relative;
-    width: fit-content;
-    display: flex;
-}
-.appcat .no-ul li{
-    display: inline-block;
-    padding: 5px 20px;
-    line-height: 20px;
-    margin-left: 0px;
     cursor: pointer;
-    text-transform: uppercase;
-    font-size: 13px;
-    position: relative;
-    z-index: 100;
-    width: 100px;
-    text-align: center;
-    transition: 0.15s linear;
-  
+   
+    padding: 20px;
+    margin: 1px 0;
+    border-bottom: 1px solid #ddd;
 }
-.appcat .no-ul li:hover{
-    color:#000;
+.task-container:hover {
+    background-color: #fafafa;
 }
-.appcat .no-ul li:first-child{
-    margin-left: 0;
+.task-container:hover .fa-trash{
+    opacity: 1;
+    background-color: #fafafa;
 }
-.appcat .no-ul li.active:hover{
-
-    color: #fff;
+.task-container .task{
+    margin: 0px 70px;
 }
-
-/*car*/
-.cars{
-    padding:30px;
-    float: left;
-    width: 100%;
-    color:#fff;
-    background-color: #fff;
-}
-.cars ul li{
-    margin-bottom: 75px;
-}
-.car
-{
-    width: 100%;
-    height: 205px;
-    background-color: #999;
-    padding: 30px;
-    border-radius: 20px;
-    position: relative;
-}
-.car-title{
-    font-size: 34px;
-    font-weight: bold;
-}
-.car-headline{
+.task-container .fas{
     position: absolute;
-    left: 0;
-    top: 80px;
-    height: 3px;
-    background-color: #fff;
-    width: 20px;
-
-}
-.car-image{
-    position: absolute;
-    bottom: -50px;
-    right: -25px;
-    max-width: 80%;
-}
-.car-btn{
-    background-color: rgba(255,255,255, 0.2);
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 100%;
-    position: absolute;
+    top: 20px;
     left: 30px;
-    bottom: 30px;
-    cursor: pointer;
-     transition: 0.3s all;
+    width: 30px;
+    height: 30px;
+    border:1px solid #bbb;
+    border-radius:20px;
+    padding: 6px;
+    text-align: center;
 }
-.car-btn:hover{
-    background-color:rgba(0,0,0, 0.2);
+.task-container .fas:before {
+    opacity: 0;
+}
+.task-container:hover .fa-trash:before {
+    opacity: 1;
 }
 
-
-/*theme*/
-.theme0{
-    background-color: #F70029; /* For browsers that do not support gradients */
-    background-image: linear-gradient(#F70029, #B80056); /* Standard syntax (must be last) */
-    transition: 0.3s all;
-}
-.theme1{
-    background-color: #12E187; /* For browsers that do not support gradients */
-    background-image: linear-gradient(#12E187, #005B98); /* Standard syntax (must be last) */
-    transition: 0.3s all;
-}
-.theme2{
-    background-color: #000B98; /* For browsers that do not support gradients */
-    background-image: linear-gradient(#000B98, #005B98); /* Standard syntax (must be last) */
-    transition: 0.3s all;
-}
-.theme3{
-    background: #77ed99;  /* fallback for old browsers */
-    background-image: linear-gradient( #77ed99, #15af67); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    transition: 0.3s all;
-}
-.theme4{
-    background: #616161;  /* fallback for old browsers */
-    background-image: linear-gradient(#9bc5c3, #616161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    transition: 0.3s all;
-}
-.theme5{
-    background-color: #fe8c00;
-    background-image: linear-gradient(#f83600,#fe8c00);
-    transition: 0.3s all;
-}
-.theme6{
-    background-color: #fe8c00;
-    background-image: linear-gradient(#f83600,#fe8c00);
-    transition: 0.3s all;
-}
-.theme7{
-    background-color: #000B98; /* For browsers that do not support gradients */
-    background-image: linear-gradient(#000B98, #005B98); /* Standard syntax (must be last) */
-    transition: 0.3s all;
-}
-.theme8{
-    background-color: #F70029; /* For browsers that do not support gradients */
-    background-image: linear-gradient(#F70029, #B80056); /* Standard syntax (must be last) */
-    transition: 0.3s all;
+.task-container .fa-trash{
+    left: auto;
+    right: 30px;
+    opacity: 0.1;
+    border: 0;
+    color: #de3000;
+    font-size: 24px;
+    top: 15px;
     
 }
-
-
-.theme0:hover{
-    background-image: linear-gradient(#B80056,#F70029); /* Standard syntax (must be last) */
+.task-container .fa-trash:hover{
+    color: #5f0101;
 }
-.theme1:hover{
-    background-image: linear-gradient(#005B98,#12E187); /* Standard syntax (must be last) */
+.active .task{
+    color: #000;
+    text-decoration: line-through;
 }
-.theme2:hover{
-    background-image: linear-gradient(#005B98,#000B98); /* Standard syntax (must be last) */
+.active .fa-check:before{
+    opacity: 1;
 }
-.theme3:hover{
-    background-image: linear-gradient(#15af67,#77ed99);
-}
-.theme4:hover{
-    background-image: linear-gradient( #616161 , #9bc5c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.theme5:hover{
-    background-image: linear-gradient(#fe8c00,#f83600);
-}
-.theme6:hover{
-    background-image: linear-gradient(#fe8c00,#f83600); /* Standard syntax (must be last) */
-}
-.theme7:hover{
-    background-image: linear-gradient(#005B98,#000B98); /* Standard syntax (must be last) */
-}
-.theme8:hover{
-    background-image: linear-gradient(#B80056,#F70029);
-}
-
-/*cars detail*/
-#details{
-    float: left;
-    width: 100%;
-    position: relative;
-}
-.cars-details {
-    background: #fff;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-}
-.details-image .car-image{
-    top:0;
-    bottom: auto;
-}
-.details-img{
-    max-width: 80%;
-    margin: 10%;
-}
-.details-content{
-    padding: 30px;
-    background: #fff;
-}
-.car-text{
-    margin: 30px 0;
-}
-.car-text p{
-    margin: 0;
-}
-.car-price{
-    margin-top: 30px;
-}
-
-.car-spec-box{
-    margin-top: 20px;
-    padding: 15px;
-    color: #17212A;
-    width:140px;
-    border-radius: 15px;
-    background-color: #F0F0F0;
-    display: inline-block;
-    margin-left: 20px;
-}
-.m-l-0{
-    margin-left: 0;
-    color:#fff;
-}
-.car-spec-box.theme01{
+.active .fa-check{
+    background-color: #FD8300;
     color: #fff;
+    border-color: #FD8300;
+    font-size: 11px;
+    padding-top: 10px;
 }
-.car-spec-box h5{
-    text-transform: uppercase;
-}
-.car-spec-box p{
-    font-size: 12px;
-    margin: 0;
-}
-.cartopbar{
-    height: 30px;
-    background: #F3F3F3!important;
-}
+
 
 @media (min-width: 500px) {
     .appwrap{
@@ -419,6 +210,6 @@ h1{
         display: none;
     }
     .todolist-wrap{
-        min-height: 450px;
+        min-height: 500px;
     }
 }

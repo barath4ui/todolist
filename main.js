@@ -45,6 +45,55 @@ function todayTime(){
 todayDate();
 setInterval(todayTime, 1000);
 
+
+const addBtn = document.getElementById("addBtn");
+const textBox =  document.getElementById("taskbox");
+const list = document.getElementById("todoList");
+
+addBtn.addEventListener("click", addTodolist);
+
+function addTodolist(){
+    console.log("Todolist function called!");
+
+    if(textBox.value.length === 0){
+        return;
+    }
+    else{
+        // console.log("Task added!");
+        
+        const  newDiv = document.createElement("div"); 
+        const  newP = document.createElement("p");
+        const newCI = document.createElement("i");
+        const newDI = document.createElement("i");
+
+        const taskContainer =  list.appendChild(newDiv)
+        const task = taskContainer.appendChild(newP)
+        const doneBtn = taskContainer.appendChild(newCI)
+        const deleteBtn = taskContainer.appendChild(newDI)
+
+        deleteBtn.className = "fas fa-trash"
+        doneBtn.className = "fas fa-check"
+
+        task.className = "task"
+        taskContainer.className = "task-container"
+
+        task.innerHTML = textBox.value
+        textBox.value = ""
+
+        deleteBtn.addEventListener("click", deleteTask)
+        doneBtn.addEventListener("click", doneTask)
+
+        function doneTask(e){
+          e.target.parentElement.classList.add("active");
+        }
+
+        function deleteTask(e){
+            e.target.parentElement.remove()
+        }
+    }
+
+}
+
 })();
 
 
