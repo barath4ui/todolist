@@ -419,6 +419,6 @@ h1{
         display: none;
     }
     .todolist-wrap{
-        min-height: 300px;
+        min-height: 500px;
     }
 }
