@@ -83,8 +83,18 @@ function addTodolist(){
         deleteBtn.addEventListener("click", deleteTask)
         doneBtn.addEventListener("click", doneTask)
 
+        let i = 0;
+
         function doneTask(e){
-          e.target.parentElement.classList.add("active");
+          let click=  i++;
+          if(click % 2 == 0){
+            e.target.parentElement.classList.add("active");
+          }
+          else{
+            e.target.parentElement.classList.remove("active");
+          }
+          
+          
         }
 
         function deleteTask(e){
